@@ -18,7 +18,7 @@ export default function SectionHeader({
   return (
     <div className={`flex flex-col ${alignClass} mb-10 md:mb-14`}>
       {label && (
-        <span className={`text-sm font-semibold uppercase tracking-wider mb-3 ${light ? 'text-green-400' : 'text-leaf'}`}>
+        <span className={`text-sm font-semibold uppercase tracking-wider mb-3 ${light ? 'text-blue-300' : 'text-leaf'}`}>
           {label}
         </span>
       )}

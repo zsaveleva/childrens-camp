@@ -97,7 +97,7 @@ export default function AboutPage() {
                     <p className="text-white/80 text-sm leading-relaxed">{CAMP.license}</p>
                   </div>
                 </div>
-                <Link href="/about/documents" className="inline-flex items-center gap-2 text-green-300 text-sm font-semibold hover:text-white transition-colors">
+                <Link href="/about/documents" className="inline-flex items-center gap-2 text-blue-300 text-sm font-semibold hover:text-white transition-colors">
                   Посмотреть все документы
                   <ArrowRight className="w-4 h-4" />
                 </Link>
@@ -141,7 +141,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="font-heading font-bold text-lg text-forest mb-3">Цели и задачи</h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  ДОЛ «Созвездие» осуществляет организацию отдыха, оздоровления и занятости детей и подростков в возрасте от 7 до 17 лет в каникулярный период.
+                  СОК «Ракета» осуществляет организацию отдыха, оздоровления и занятости детей и подростков в возрасте от 7 до 17 лет в каникулярный период.
                 </p>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Основные задачи: укрепление здоровья, развитие личностных качеств, формирование навыков самостоятельности и коллективной работы, реализация творческого потенциала.
@@ -150,7 +150,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="font-heading font-bold text-lg text-forest mb-3">Режим работы</h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  Лагерь работает в трёх летних сменах продолжительностью 21–22 дня каждая. Период работы: июнь — август 2025 года.
+                  Лагерь работает в нескольких сменах продолжительностью 21–22 дня каждая в течение всего года. Актуальное расписание смен уточняйте у администрации.
                 </p>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Офис организации работает: {CAMP.workingHours}. В период смен — круглосуточно с дежурным персоналом.

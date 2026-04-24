@@ -92,7 +92,7 @@ export default function ContactsPage() {
                 </div>
                 <div className="bg-cream rounded-3xl border border-gray-200 p-6">
                   <div className="w-10 h-10 bg-sky-50 rounded-xl flex items-center justify-center mb-3">
-                    <Clock className="w-5 h-5 text-sky-camp" />
+                    <Clock className="w-5 h-5 text-leaf" />
                   </div>
                   <div className="font-semibold text-ink text-sm mb-1">Режим работы</div>
                   <div className="text-gray-500 text-sm leading-relaxed">{CAMP.workingHours}</div>
@@ -108,11 +108,11 @@ export default function ContactsPage() {
                   <div className="w-20 h-20 bg-gold rounded-2xl flex items-center justify-center mb-5 shadow-xl">
                     <MapPin className="w-10 h-10 text-ink" />
                   </div>
-                  <div className="font-heading font-black text-2xl text-white mb-2">Лагерь «Созвездие»</div>
+                  <div className="font-heading font-black text-2xl text-white mb-2">СОК «Ракета»</div>
                   <div className="text-white/70 text-sm mb-2 max-w-xs">{CAMP.address}</div>
-                  <div className="text-green-300 text-sm mb-8">{CAMP.distanceFromSpb}</div>
+                  <div className="text-blue-300 text-sm mb-8">{CAMP.distanceFromSpb}</div>
                   <a
-                    href="https://yandex.ru/maps/?text=Ленинградская+область+Всеволожский+район+Романовка+Лесная+1"
+                    href="https://yandex.ru/maps/?text=Ленинградская+область+Выборгский+район+Горьковское+Лесная+1"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-6 py-3 bg-white/15 hover:bg-white/25 border border-white/20 text-white font-semibold rounded-xl transition-colors"

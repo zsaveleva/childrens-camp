@@ -6,21 +6,21 @@ const config: Config = {
     extend: {
       colors: {
         forest: {
-          DEFAULT: '#1a3c2e',
-          dark: '#0f2419',
-          light: '#2a5040',
+          DEFAULT: '#0d2c6b',
+          dark: '#07193e',
+          light: '#1a3d8c',
         },
         leaf: {
-          DEFAULT: '#2e9e6a',
-          light: '#e8f5ee',
+          DEFAULT: '#1a6ec4',
+          light: '#deeefb',
         },
         gold: {
           DEFAULT: '#f0a30e',
           light: '#fef3c7',
           dark: '#c47d00',
         },
-        'sky-camp': '#0e88c9',
-        cream: '#f2ede6',
+        'sky-camp': '#c62828',
+        cream: '#eff4fb',
         ink: '#111827',
       },
       fontFamily: {
@@ -38,7 +38,7 @@ const config: Config = {
         },
       },
       backgroundImage: {
-        'hero-gradient': 'linear-gradient(135deg, #1a3c2e 0%, #0f2419 50%, #0a1810 100%)',
+        'hero-gradient': 'linear-gradient(135deg, #0d2c6b 0%, #07193e 50%, #03102a 100%)',
       },
     },
   },

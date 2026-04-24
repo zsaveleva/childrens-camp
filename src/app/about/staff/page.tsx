@@ -11,7 +11,7 @@ const extendedStaff = [
   { name: 'Смирнова Ольга Дмитриевна', role: 'Педагог-психолог', experience: '7 лет', education: 'СПбГУ, психология', fun: 'Проводит тренинги по уверенности в себе', initials: 'ОС', color: 'leaf' },
   { name: 'Козлов Игорь Владимирович', role: 'Инструктор по спорту', experience: '5 лет, КМС по плаванию', education: 'НГУ им. Лесгафта', fun: 'Научил плавать более 200 детей', initials: 'ИК', color: 'sky-camp' },
   { name: 'Васильева Мария Николаевна', role: 'Педагог дополнительного образования', experience: '6 лет (робототехника, IT)', education: 'СПбПУ Петра Великого', fun: 'Выпускники её кружка уже в IT-компаниях', initials: 'МВ', color: 'forest' },
-  { name: 'Петров Денис Андреевич', role: 'Вожатый, старший отряд', experience: '4 года', education: 'РГПУ им. Герцена', fun: 'Придумал квест «Исчезнувшее созвездие»', initials: 'ДП', color: 'gold' },
+  { name: 'Петров Денис Андреевич', role: 'Вожатый, старший отряд', experience: '4 года', education: 'РГПУ им. Герцена', fun: 'Придумал ночной квест «Операция Ракета»', initials: 'ДП', color: 'gold' },
 ]
 
 const avatarColors: Record<string, string> = {
@@ -76,7 +76,7 @@ export default function StaffPage() {
           <div className="mt-10 bg-cream rounded-2xl p-6 text-center">
             <p className="text-gray-500 text-base">
               Полный список сотрудников, копии дипломов и справок об отсутствии судимости доступны по запросу.{' '}
-              <a href="mailto:info@sozvezdie-camp.ru" className="text-leaf hover:text-forest font-medium transition-colors">
+              <a href="mailto:raketa-lenobl@mail.ru" className="text-leaf hover:text-forest font-medium transition-colors">
                 Написать запрос
               </a>
             </p>

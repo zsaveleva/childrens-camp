@@ -56,8 +56,8 @@ export default function DocumentsPage() {
               <strong className="text-ink">Не нашли нужный документ?</strong> Напишите нам — вышлем по запросу.
             </p>
             <div className="flex gap-4">
-              <a href="mailto:info@sozvezdie-camp.ru" className="text-leaf hover:text-forest font-medium transition-colors">
-                info@sozvezdie-camp.ru
+              <a href="mailto:raketa-lenobl@mail.ru" className="text-leaf hover:text-forest font-medium transition-colors">
+                raketa-lenobl@mail.ru
               </a>
               <span className="text-gray-200">|</span>
               <a href="tel:+78123345566" className="text-leaf hover:text-forest font-medium transition-colors">

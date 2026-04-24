@@ -14,7 +14,7 @@ const icons = {
 const cardColors = [
   { bg: 'bg-forest', icon: 'bg-white/15 text-white', text: 'text-white/70', title: 'text-white' },
   { bg: 'bg-white', icon: 'bg-leaf-light text-leaf', text: 'text-gray-500', title: 'text-ink' },
-  { bg: 'bg-white', icon: 'bg-sky-50 text-sky-camp', text: 'text-gray-500', title: 'text-ink' },
+  { bg: 'bg-white', icon: 'bg-leaf-light text-leaf', text: 'text-gray-500', title: 'text-ink' },
   { bg: 'bg-white', icon: 'bg-gold-light text-gold-dark', text: 'text-gray-500', title: 'text-ink' },
   { bg: 'bg-white', icon: 'bg-leaf-light text-leaf', text: 'text-gray-500', title: 'text-ink' },
   { bg: 'bg-forest', icon: 'bg-white/15 text-white', text: 'text-white/70', title: 'text-white' },

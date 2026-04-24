@@ -98,11 +98,11 @@ export default function Contacts() {
                   <MapPin className="w-8 h-8 text-ink" />
                 </div>
                 <div className="font-heading font-bold text-xl text-white mb-2">
-                  Лагерь «Созвездие»
+                  СОК «Ракета»
                 </div>
                 <div className="text-white/60 text-sm mb-6">{CAMP.addressShort}</div>
                 <a
-                  href="https://yandex.ru/maps/?text=Ленинградская+область+Всеволожский+район+Романовка"
+                  href="https://yandex.ru/maps/?text=Ленинградская+область+Выборгский+район+Горьковское"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-5 py-2.5 bg-white/15 hover:bg-white/25 border border-white/20 text-white text-sm font-semibold rounded-xl transition-colors"
@@ -125,21 +125,21 @@ export default function Contacts() {
                   <div className="w-7 h-7 bg-forest rounded-lg flex items-center justify-center flex-shrink-0 text-white text-xs font-bold">А</div>
                   <div>
                     <div className="font-semibold text-base text-ink">Трансфер от лагеря</div>
-                    <div className="text-gray-500 text-sm mt-0.5">Автобус от Московского вокзала (СПб) в день заезда — 1 500 ₽</div>
+                    <div className="text-gray-500 text-sm mt-0.5">Комфортабельный автобус в сопровождении персонала и медработника — уточняйте при записи</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-7 h-7 bg-sky-camp rounded-lg flex items-center justify-center flex-shrink-0 text-white text-xs font-bold">М</div>
                   <div>
                     <div className="font-semibold text-base text-ink">На автомобиле</div>
-                    <div className="text-gray-500 text-sm mt-0.5">50 км по Мурманскому шоссе (А-181), навигатор: д. Романовка, ул. Лесная, 1</div>
+                    <div className="text-gray-500 text-sm mt-0.5">Средне-Выборгское шоссе, 12 км, по указателю на пос. Горьковское (2,4 км)</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-7 h-7 bg-leaf rounded-lg flex items-center justify-center flex-shrink-0 text-white text-xs font-bold">Э</div>
+                  <div className="w-7 h-7 bg-leaf rounded-lg flex items-center justify-center flex-shrink-0 text-white text-xs font-bold">А</div>
                   <div>
-                    <div className="font-semibold text-base text-ink">На электричке</div>
-                    <div className="text-gray-500 text-sm mt-0.5">Финляндский вокзал → Горьковское, далее такси 5 минут</div>
+                    <div className="font-semibold text-base text-ink">На автобусе</div>
+                    <div className="text-gray-500 text-sm mt-0.5">М «Гражданский пр.» → маршр. №827 или М «Парнас» → авт. №830 до 12 км Средне-Выборгского шоссе, далее 2,4 км</div>
                   </div>
                 </div>
               </div>

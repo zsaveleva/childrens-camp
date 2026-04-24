@@ -4,9 +4,9 @@ import SectionHeader from '@/components/ui/SectionHeader'
 import { CAMP } from '@/lib/data'
 
 const stats = [
-  { icon: Calendar, value: '2008', label: 'Год основания', color: 'text-forest' },
-  { icon: Users, value: '8 000+', label: 'Детей побывало', color: 'text-leaf' },
-  { icon: MapPin, value: '15 га', label: 'Территория', color: 'text-sky-camp' },
+  { icon: Calendar, value: '1956', label: 'Год основания', color: 'text-forest' },
+  { icon: Users, value: '50 000+', label: 'Детей побывало', color: 'text-leaf' },
+  { icon: MapPin, value: '8 га', label: 'Территория', color: 'text-gold' },
   { icon: Award, value: '100%', label: 'Рейтинг безопасности', color: 'text-gold' },
 ]
 
@@ -19,12 +19,12 @@ export default function About() {
           <div>
             <SectionHeader
               label="О лагере"
-              title={`«Созвездие» — это не просто лагерь`}
+              title={`«Ракета» — это не просто лагерь`}
               align="left"
             />
             <div className="space-y-5 text-gray-600 text-lg leading-relaxed mb-8">
               <p>
-                Мы работаем с 2008 года — и за это время провели счастливое лето для более чем восьми тысяч детей. Лагерь расположен в экологически чистом районе Ленинградской области, в сосновом лесу на берегу озера, в 50 км от Санкт-Петербурга.
+                Мы работаем с 1956 года — и за это время подарили незабываемый отдых десяткам тысяч детей. Лагерь расположен на Карельском перешейке в государственном природном заказнике «Гладышевский»: восемь гектаров хвойного леса поблизости озера, в 70 км от Санкт-Петербурга.
               </p>
               <p>
                 Для нас важны три вещи: <strong className="text-ink font-semibold">безопасность</strong> каждого ребёнка, <strong className="text-ink font-semibold">насыщенная программа</strong>, которую дети вспоминают всю жизнь, и <strong className="text-ink font-semibold">доверие родителей</strong>, которое мы ценим больше всего.

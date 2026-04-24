@@ -3,7 +3,7 @@ import { CAMP } from '@/lib/data'
 import MAXIcon from '@/components/ui/MAXIcon'
 
 const stats = [
-  { value: '3 смены', label: 'Июнь — Август' },
+  { value: 'Смены', label: 'Круглый год' },
   { value: 'от 48 000 ₽', label: '21 день', accent: true },
   { value: '50 км', label: 'от Санкт-Петербурга' },
   { value: '7–17 лет', label: 'Возраст' },
@@ -62,7 +62,7 @@ export default function Hero() {
       <div className="relative z-10 container-camp w-full text-center py-32 lg:py-40">
         {/* Live badge */}
         <div className="inline-flex items-center gap-2.5 px-5 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-medium text-white/90 mb-10">
-          <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+          <span className="w-2 h-2 bg-blue-300 rounded-full animate-pulse" />
           Набор на сезон 2025 открыт · Есть свободные места
         </div>
 
@@ -81,7 +81,7 @@ export default function Hero() {
 
         {/* Sub */}
         <p className="text-white/80 text-lg sm:text-xl md:text-2xl leading-relaxed max-w-2xl mx-auto mb-12">
-          Детский оздоровительный лагерь «Созвездие»
+          Спортивно-оздоровительный комплекс «Ракета»
           <br />
           <span className="text-white/60 text-base sm:text-lg">Ленинградская область · Сосновый лес · Рядом с природой</span>
         </p>

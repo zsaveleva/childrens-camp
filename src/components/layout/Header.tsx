@@ -49,13 +49,14 @@ export default function Header() {
             <Link href="/" className="flex items-center gap-3 flex-shrink-0">
               <div className="w-9 h-9 bg-forest rounded-xl flex items-center justify-center">
                 <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white">
-                  <path d="M12 2L3.09 8.26 4 21h16l.91-12.74L12 2zm0 2.5l7.4 5.1-.75 10.4H5.35l-.75-10.4L12 4.5z"/>
-                  <circle cx="12" cy="12" r="2.5"/>
+                  <path d="M12 2C10 2 8 4.5 8 8v5.5l-2 1.5V17h12v-2l-2-1.5V8c0-3.5-2-6-4-6zm0 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/>
+                  <path d="M10.5 17v1.5a1.5 1.5 0 0 0 3 0V17h-3z"/>
+                  <path d="M8 12.5 5.5 14H8zM16 12.5 18.5 14H16z"/>
                 </svg>
               </div>
               <div>
                 <div className={`font-heading font-black text-xl leading-none ${scrolled ? 'text-forest' : 'text-white'}`}>
-                  Созвездие
+                  Ракета
                 </div>
                 <div className={`text-xs leading-none mt-0.5 ${scrolled ? 'text-gray-400' : 'text-white/60'}`}>
                   детский лагерь

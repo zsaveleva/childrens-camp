@@ -28,7 +28,7 @@ export default function Sessions() {
       <div className="container-camp">
         <SectionHeader
           label="Смены 2025"
-          title="Три незабываемых лета"
+          title="Ближайшие смены"
           description="Выбирайте смену, которая подходит вашей семье. Связывайтесь с нами напрямую — расскажем о наличии мест и поможем выбрать."
         />
 
@@ -43,7 +43,7 @@ export default function Sessions() {
               }`}
             >
               {/* Session number */}
-              <div className={`text-xs font-bold uppercase tracking-widest mb-3 ${i === 2 ? 'text-green-300' : 'text-leaf'}`}>
+              <div className={`text-xs font-bold uppercase tracking-widest mb-3 ${i === 2 ? 'text-blue-300' : 'text-leaf'}`}>
                 {s.title}
               </div>
 
@@ -84,7 +84,7 @@ export default function Sessions() {
               </div>
 
               {/* Spots */}
-              <div className={i === 2 ? '[&_.text-gray-500]:text-white/70 [&_.text-leaf]:text-green-300 [&_.bg-gray-100]:bg-white/20' : ''}>
+              <div className={i === 2 ? '[&_.text-gray-500]:text-white/70 [&_.text-leaf]:text-blue-300 [&_.bg-gray-100]:bg-white/20' : ''}>
                 <SpotsBar total={s.spotsTotal} left={s.spotsLeft} />
               </div>
 

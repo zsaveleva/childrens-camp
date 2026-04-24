@@ -44,7 +44,7 @@ export default function ServicesPage() {
             <span className="text-white/80">Услуги и стоимость</span>
           </nav>
           <h1 className="font-heading font-black text-4xl md:text-5xl text-white mb-4">Услуги и стоимость</h1>
-          <p className="text-white/75 text-lg max-w-xl">Путёвки на лето 2025. Цены прозрачные, без скрытых платежей.</p>
+          <p className="text-white/75 text-lg max-w-xl">Путёвки 2025. Цены прозрачные, без скрытых платежей.</p>
         </div>
       </div>
 

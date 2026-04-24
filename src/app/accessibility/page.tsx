@@ -84,7 +84,7 @@ export default function AccessibilityPage() {
               <ul className="space-y-3">
                 {digital.map((item) => (
                   <li key={item} className="flex items-start gap-3 text-base text-gray-600">
-                    <Check className="w-5 h-5 text-sky-camp flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-leaf flex-shrink-0 mt-0.5" />
                     {item}
                   </li>
                 ))}
@@ -97,12 +97,12 @@ export default function AccessibilityPage() {
                 Если вы столкнулись с барьером — физическим или цифровым — пожалуйста, сообщите нам. Мы рассматриваем все обращения и стремимся устранить проблемы.
               </p>
               <div className="flex gap-4">
-                <a href="tel:+78123345566" className="text-green-300 font-semibold text-sm hover:text-white transition-colors">
+                <a href="tel:+78123345566" className="text-blue-300 font-semibold text-sm hover:text-white transition-colors">
                   +7 (812) 334-55-66
                 </a>
                 <span className="text-white/20">|</span>
-                <a href="mailto:info@sozvezdie-camp.ru" className="text-green-300 font-semibold text-sm hover:text-white transition-colors">
-                  info@sozvezdie-camp.ru
+                <a href="mailto:raketa-lenobl@mail.ru" className="text-blue-300 font-semibold text-sm hover:text-white transition-colors">
+                  raketa-lenobl@mail.ru
                 </a>
               </div>
             </div>

@@ -16,7 +16,7 @@ export default function CTA() {
             <div className="max-w-xl">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-gold/20 border border-gold/30 rounded-full text-gold text-sm font-semibold mb-5">
                 <span className="w-2 h-2 bg-gold rounded-full animate-pulse" />
-                Осталось 35 мест на лето 2025
+                Осталось 35 мест в ближайших сменах
               </div>
               <h2 className="font-heading font-black text-3xl sm:text-4xl md:text-5xl text-white leading-tight mb-4">
                 Готовы записать<br />

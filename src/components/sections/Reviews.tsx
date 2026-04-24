@@ -71,7 +71,7 @@ export default function Reviews() {
             </p>
           </div>
           <a
-            href="https://vk.com/sozvezdiecamp"
+            href="https://vk.com/dol_raketa1956"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline-forest flex-shrink-0"

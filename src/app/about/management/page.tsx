@@ -10,7 +10,7 @@ const management = [
   {
     name: 'Белова Наталья Сергеевна',
     role: 'Директор',
-    fullRole: 'Директор детского оздоровительного лагеря «Созвездие»',
+    fullRole: 'Директор спортивно-оздоровительного комплекса «Ракета»',
     education: 'Высшее педагогическое образование. РГПУ им. А.И. Герцена, специальность «Педагогика и психология», 2007 г.',
     experience: '17 лет в сфере детского отдыха и оздоровления',
     phone: CAMP.phone,
@@ -46,7 +46,7 @@ export default function ManagementPage() {
             <span className="text-white/80">Руководство</span>
           </nav>
           <h1 className="font-heading font-black text-4xl md:text-5xl text-white mb-4">Руководство</h1>
-          <p className="text-white/75 text-lg">Административный состав лагеря «Созвездие»</p>
+          <p className="text-white/75 text-lg">Административный состав СОК «Ракета»</p>
         </div>
       </div>
 
