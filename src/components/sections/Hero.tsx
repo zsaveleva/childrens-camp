@@ -128,7 +128,7 @@ export default function Hero() {
       {/* Scroll indicator */}
       <a
         href="#about"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/35 hover:text-white/60 transition-colors"
+        className="absolute bottom-24 lg:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/35 hover:text-white/60 transition-colors"
       >
         <span className="text-xs uppercase tracking-[0.2em]">Подробнее</span>
         <ChevronDown className="w-5 h-5 animate-bounce" />

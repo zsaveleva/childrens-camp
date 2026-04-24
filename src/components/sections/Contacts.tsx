@@ -129,7 +129,7 @@ export default function Contacts() {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-7 h-7 bg-sky-camp rounded-lg flex items-center justify-center flex-shrink-0 text-white text-xs font-bold">М</div>
+                  <div className="w-7 h-7 bg-forest rounded-lg flex items-center justify-center flex-shrink-0 text-white text-xs font-bold">М</div>
                   <div>
                     <div className="font-semibold text-base text-ink">На автомобиле</div>
                     <div className="text-gray-500 text-sm mt-0.5">Средне-Выборгское шоссе, 12 км, по указателю на пос. Горьковское (2,4 км)</div>

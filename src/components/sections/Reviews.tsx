@@ -1,5 +1,5 @@
 import SectionHeader from '@/components/ui/SectionHeader'
-import { REVIEWS } from '@/lib/data'
+import { REVIEWS, CAMP } from '@/lib/data'
 import VKIcon from '@/components/ui/VKIcon'
 
 function StarRating({ rating }: { rating: number }) {
@@ -71,7 +71,7 @@ export default function Reviews() {
             </p>
           </div>
           <a
-            href="https://vk.com/dol_raketa1956"
+            href={CAMP.vkGroup}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline-forest flex-shrink-0"

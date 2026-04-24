@@ -7,7 +7,7 @@ import SectionHeader from '@/components/ui/SectionHeader'
 import { ACTIVITIES } from '@/lib/data'
 
 const tabColors = {
-  sky: { active: 'bg-sky-camp text-white', dot: 'bg-sky-camp', border: 'border-sky-camp/20 bg-sky-50' },
+  blue: { active: 'bg-blue-600 text-white', dot: 'bg-blue-600', border: 'border-blue-200 bg-blue-50' },
   gold: { active: 'bg-gold text-ink', dot: 'bg-gold', border: 'border-gold/20 bg-gold-light' },
   leaf: { active: 'bg-leaf text-white', dot: 'bg-leaf', border: 'border-leaf/20 bg-leaf-light' },
   forest: { active: 'bg-forest text-white', dot: 'bg-forest', border: 'border-forest/20 bg-cream' },
@@ -53,10 +53,7 @@ export default function Activities() {
               <div className="text-4xl mb-4">{current.emoji}</div>
               <h3 className="font-heading font-black text-3xl text-ink mb-4">{current.category}</h3>
               <p className="text-gray-500 leading-relaxed mb-6">
-                {current.category === 'Спорт' && 'Профессиональные тренеры, современное оборудование, собственный бассейн и спортивные площадки. Для всех уровней подготовки.'}
-                {current.category === 'Творчество' && 'Раскрываем таланты в атмосфере без осуждения. Даже если ребёнок думает, что не умеет рисовать — у нас получится.'}
-                {current.category === 'Наука и IT' && 'Роботы, код и наука — понятно и увлекательно. Дети уезжают домой с реальными проектами и новыми знаниями.'}
-                {current.category === 'Приключения' && 'Настоящие приключения в лесу и на воде. Учим ориентироваться, работать в команде и преодолевать себя.'}
+                {current.description}
               </p>
               <Link href="/activities" className="btn-outline-forest">
                 Подробная программа

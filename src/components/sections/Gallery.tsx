@@ -1,9 +1,10 @@
 import SectionHeader from '@/components/ui/SectionHeader'
 import VKIcon from '@/components/ui/VKIcon'
+import { CAMP } from '@/lib/data'
 
 const photos = [
   { label: 'Открытие смены', sub: 'Торжественная линейка', color: 'from-forest to-forest-light', size: 'large' },
-  { label: 'Спортивные игры', sub: 'Волейбол на пляже', color: 'from-sky-camp to-blue-600', size: 'small' },
+  { label: 'Спортивные игры', sub: 'Волейбол на пляже', color: 'from-blue-700 to-blue-500', size: 'small' },
   { label: 'Творческая мастерская', sub: 'Арт-студия', color: 'from-gold to-yellow-600', size: 'small' },
   { label: 'Вечерний костёр', sub: 'Традиция лагеря', color: 'from-orange-600 to-red-700', size: 'medium' },
   { label: 'Робототехника', sub: 'Наука и IT', color: 'from-violet-600 to-purple-800', size: 'medium' },
@@ -26,7 +27,7 @@ export default function Gallery() {
         {/* Mosaic grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
           {/* Row 1: large + 2 small */}
-          <div className={`col-span-2 row-span-2 relative rounded-3xl overflow-hidden bg-gradient-to-br ${photos[0].color} min-h-[200px] md:min-h-[280px] group cursor-pointer`}>
+          <div className={`col-span-2 row-span-2 relative rounded-3xl overflow-hidden bg-gradient-to-br ${photos[0].color} min-h-[200px] md:min-h-[280px] group `}>
             <div className="absolute inset-0 flex items-end p-6">
               <div>
                 <div className="font-heading font-bold text-white text-xl mb-1">{photos[0].label}</div>
@@ -40,7 +41,7 @@ export default function Gallery() {
           {[1, 2].map((i) => (
             <div
               key={i}
-              className={`relative rounded-3xl overflow-hidden bg-gradient-to-br ${photos[i].color} min-h-[130px] group cursor-pointer`}
+              className={`relative rounded-3xl overflow-hidden bg-gradient-to-br ${photos[i].color} min-h-[130px] group `}
             >
               <div className="absolute inset-0 bg-black/25 group-hover:bg-black/10 transition-colors" />
               <div className="absolute bottom-3 left-3 right-3">
@@ -53,7 +54,7 @@ export default function Gallery() {
           {[3, 4].map((i) => (
             <div
               key={i}
-              className={`relative rounded-3xl overflow-hidden bg-gradient-to-br ${photos[i].color} min-h-[130px] group cursor-pointer`}
+              className={`relative rounded-3xl overflow-hidden bg-gradient-to-br ${photos[i].color} min-h-[130px] group `}
             >
               <div className="absolute inset-0 bg-black/25 group-hover:bg-black/10 transition-colors" />
               <div className="absolute bottom-3 left-3 right-3">
@@ -67,7 +68,7 @@ export default function Gallery() {
           {[5, 6].map((i) => (
             <div
               key={i}
-              className={`relative rounded-3xl overflow-hidden bg-gradient-to-br ${photos[i].color} min-h-[130px] group cursor-pointer`}
+              className={`relative rounded-3xl overflow-hidden bg-gradient-to-br ${photos[i].color} min-h-[130px] group `}
             >
               <div className="absolute inset-0 bg-black/25 group-hover:bg-black/10 transition-colors" />
               <div className="absolute bottom-3 left-3">
@@ -76,7 +77,7 @@ export default function Gallery() {
             </div>
           ))}
 
-          <div className={`col-span-2 relative rounded-3xl overflow-hidden bg-gradient-to-br ${photos[7].color} min-h-[140px] group cursor-pointer`}>
+          <div className={`col-span-2 relative rounded-3xl overflow-hidden bg-gradient-to-br ${photos[7].color} min-h-[140px] group `}>
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
             <div className="absolute bottom-4 left-6">
               <div className="font-heading font-bold text-white text-xl mb-1">{photos[7].label}</div>
@@ -89,7 +90,7 @@ export default function Gallery() {
         {/* VK link */}
         <div className="text-center">
           <a
-            href="https://vk.com/dol_raketa1956"
+            href={CAMP.vkGroup}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2.5 px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold rounded-xl transition-colors"

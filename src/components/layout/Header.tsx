@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { Phone, Menu, X, ChevronDown } from 'lucide-react'
 import { CAMP } from '@/lib/data'
 import MAXIcon from '@/components/ui/MAXIcon'
@@ -17,6 +18,10 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [aboutOpen, setAboutOpen] = useState(false)
+  const [desktopDropdownOpen, setDesktopDropdownOpen] = useState(false)
+  const pathname = usePathname()
+  const isActive = (href: string) => pathname === href
+  const isAboutActive = aboutSubmenu.some(item => pathname.startsWith(item.href))
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 20)
@@ -67,23 +72,47 @@ export default function Header() {
             {/* Desktop Nav */}
             <nav className="hidden lg:flex items-center gap-1">
               {/* About with submenu */}
-              <div className="relative group">
+              <div
+                className="relative"
+                onMouseEnter={() => setDesktopDropdownOpen(true)}
+                onMouseLeave={() => setDesktopDropdownOpen(false)}
+              >
                 <button
+                  onClick={() => setDesktopDropdownOpen(!desktopDropdownOpen)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Escape') setDesktopDropdownOpen(false)
+                    if (e.key === 'ArrowDown') { e.preventDefault(); setDesktopDropdownOpen(true) }
+                  }}
+                  aria-expanded={desktopDropdownOpen}
+                  aria-haspopup="menu"
                   className={`flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-xl transition-colors ${
                     scrolled
-                      ? 'text-gray-700 hover:text-forest hover:bg-gray-50'
-                      : 'text-white/80 hover:text-white hover:bg-white/10'
+                      ? isAboutActive
+                        ? 'text-forest bg-gray-50 font-semibold'
+                        : 'text-gray-700 hover:text-forest hover:bg-gray-50'
+                      : isAboutActive
+                        ? 'text-white bg-white/15 font-semibold'
+                        : 'text-white/80 hover:text-white hover:bg-white/10'
                   }`}
                 >
                   О лагере
-                  <ChevronDown className="w-3.5 h-3.5 transition-transform group-hover:rotate-180" />
+                  <ChevronDown className={`w-3.5 h-3.5 transition-transform ${desktopDropdownOpen ? 'rotate-180' : ''}`} />
                 </button>
-                <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-2xl shadow-xl border border-gray-200 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-1 group-hover:translate-y-0">
+                <div
+                  role="menu"
+                  className={`absolute top-full left-0 mt-1 w-56 bg-white rounded-2xl shadow-xl border border-gray-200 py-2 transition-all duration-200 ${
+                    desktopDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-1'
+                  }`}
+                >
                   {aboutSubmenu.map((item) => (
                     <Link
                       key={item.href}
                       href={item.href}
-                      className="block px-4 py-2.5 text-sm text-gray-700 hover:text-forest hover:bg-gray-50 transition-colors"
+                      role="menuitem"
+                      onClick={() => setDesktopDropdownOpen(false)}
+                      className={`block px-4 py-2.5 text-sm transition-colors hover:bg-gray-50 ${
+                        isActive(item.href) ? 'text-forest font-semibold bg-gray-50' : 'text-gray-700 hover:text-forest'
+                      }`}
                     >
                       {item.label}
                     </Link>
@@ -102,8 +131,12 @@ export default function Header() {
                   href={link.href}
                   className={`px-4 py-2 text-sm font-medium rounded-xl transition-colors ${
                     scrolled
-                      ? 'text-gray-700 hover:text-forest hover:bg-gray-50'
-                      : 'text-white/80 hover:text-white hover:bg-white/10'
+                      ? isActive(link.href)
+                        ? 'text-forest bg-gray-50 font-semibold'
+                        : 'text-gray-700 hover:text-forest hover:bg-gray-50'
+                      : isActive(link.href)
+                        ? 'text-white bg-white/15 font-semibold'
+                        : 'text-white/80 hover:text-white hover:bg-white/10'
                   }`}
                 >
                   {link.label}

@@ -20,7 +20,7 @@ function FAQItem({ q, a, open, onToggle }: { q: string; a: string; open: boolean
         />
       </button>
       <div
-        className={`overflow-hidden transition-all duration-300 ${open ? 'max-h-96' : 'max-h-0'}`}
+        className={`overflow-hidden transition-all duration-300 ${open ? 'max-h-[600px]' : 'max-h-0'}`}
       >
         <div className="px-6 pb-5">
           <div className="h-px bg-gray-100 mb-4" />
