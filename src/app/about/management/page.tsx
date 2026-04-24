@@ -3,7 +3,8 @@ import Link from 'next/link'
 import { CAMP } from '@/lib/data'
 
 export const metadata: Metadata = {
-  title: 'Руководство организации',
+  title: 'Руководство',
+  description: 'Директор и административный состав СОК «Ракета» — детского лагеря в Ленинградской области.',
 }
 
 const management = [

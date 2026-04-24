@@ -4,7 +4,8 @@ import { FileText, Download } from 'lucide-react'
 import { DOCUMENTS } from '@/lib/data'
 
 export const metadata: Metadata = {
-  title: 'Документы — Лицензии, заключения, программы',
+  title: 'Документы',
+  description: 'Лицензии, санитарно-эпидемиологические заключения, программа воспитания и оздоровления, договор и другие документы СОК «Ракета».',
 }
 
 export default function DocumentsPage() {

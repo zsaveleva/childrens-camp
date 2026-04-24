@@ -4,6 +4,7 @@ import { TEAM } from '@/lib/data'
 
 export const metadata: Metadata = {
   title: 'Педагогический состав',
+  description: 'Вожатые, педагоги и воспитатели СОК «Ракета». Все сотрудники с педагогическим образованием, прошли проверку МВД.',
 }
 
 const extendedStaff = [

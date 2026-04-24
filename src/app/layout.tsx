@@ -26,17 +26,25 @@ export const viewport = {
 }
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://zsaveleva.github.io/childrens-camp'),
   title: {
-    default: `СОК «Ракета» — детский оздоровительный лагерь в Ленинградской области`,
+    default: `СОК «Ракета» — детский лагерь в Ленинградской области`,
     template: `%s | СОК «Ракета»`,
   },
-  description: `${CAMP.shortDesc}. Смены круглый год. От 48 000 ₽. Звоните: ${CAMP.phone}`,
-  keywords: ['детский лагерь', 'Ленинградская область', 'детский лагерь круглый год', 'отдых детей', 'лагерь Санкт-Петербург', 'Ракета', 'Карельский перешеек'],
+  description: `${CAMP.shortDesc}. Смены круглый год. От 48 000 ₽. Телефон: ${CAMP.phone}`,
+  keywords: ['детский лагерь', 'Ленинградская область', 'детский лагерь круглый год', 'отдых детей', 'лагерь Санкт-Петербург', 'Ракета', 'Карельский перешеек', 'СОК Ракета', 'лагерь Горьковское'],
   openGraph: {
+    siteName: `СОК «Ракета»`,
     title: `СОК «Ракета» — незабываемый отдых на Карельском перешейке`,
-    description: CAMP.shortDesc,
+    description: `${CAMP.shortDesc}. Смены круглый год, 70 км от СПб.`,
     locale: 'ru_RU',
     type: 'website',
+    url: '/',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `СОК «Ракета» — детский лагерь в Ленинградской области`,
+    description: `${CAMP.shortDesc}. Смены круглый год, 70 км от СПб.`,
   },
 }
 

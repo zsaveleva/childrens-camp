@@ -4,7 +4,8 @@ import { ArrowRight, Building2, FileText, Users, Phone, Award, MapPin } from 'lu
 import { CAMP } from '@/lib/data'
 
 export const metadata: Metadata = {
-  title: 'Об организации отдыха детей — Основные сведения',
+  title: 'Об организации',
+  description: 'Основные сведения о СОК «Ракета»: юридическая информация, лицензии, контрольно-надзорная деятельность, описание деятельности.',
 }
 
 const sections = [

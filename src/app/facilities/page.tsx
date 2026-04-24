@@ -3,7 +3,8 @@ import Link from 'next/link'
 import { Check } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Материально-техническое обеспечение — Условия проживания',
+  title: 'Материально-техническая база',
+  description: 'Территория, корпуса, спортивные площадки и питание в СОК «Ракета»: 8 га хвойного леса в заказнике «Гладышевский», Ленинградская область.',
 }
 
 const facilities = [

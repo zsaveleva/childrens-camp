@@ -3,7 +3,8 @@ import Link from 'next/link'
 import { ACTIVITIES } from '@/lib/data'
 
 export const metadata: Metadata = {
-  title: 'Деятельность — Программа и активности',
+  title: 'Программа и активности',
+  description: 'Спорт, творчество, наука и приключения в СОК «Ракета». Расписание дня, кружки и секции, выезды и мероприятия.',
 }
 
 const schedule = [

@@ -6,7 +6,8 @@ import Badge from '@/components/ui/Badge'
 import MAXIcon from '@/components/ui/MAXIcon'
 
 export const metadata: Metadata = {
-  title: 'Услуги — Стоимость путёвок и смены 2025',
+  title: 'Смены и стоимость',
+  description: 'Путёвки в СОК «Ракета» 2025: смены круглый год, детей 7–17 лет. Стоимость от 48 000 ₽ за 21 день. Что включено, как оформить.',
 }
 
 const included = [

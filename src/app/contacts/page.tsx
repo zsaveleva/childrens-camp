@@ -5,7 +5,8 @@ import { CAMP } from '@/lib/data'
 import MAXIcon from '@/components/ui/MAXIcon'
 
 export const metadata: Metadata = {
-  title: 'Контакты — Телефон, Email, Адрес',
+  title: 'Контакты',
+  description: `Телефон, email, адрес и схема проезда до СОК «Ракета». Звоните: ${'+7 (921) 922-07-31'} или пишите в MAX.`,
 }
 
 export default function ContactsPage() {

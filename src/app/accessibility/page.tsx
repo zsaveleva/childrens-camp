@@ -4,6 +4,7 @@ import { Check } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Доступная среда',
+  description: 'Условия доступной среды для детей с ограниченными возможностями здоровья в СОК «Ракета». Пандусы, специальное оборудование, сопровождение.',
 }
 
 const physical = [
