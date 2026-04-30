@@ -28,7 +28,7 @@ export default function Sessions() {
       <div className="container-camp">
         <SectionHeader
           label="Смены 2025"
-          title="Каникулы круглый год"
+          title="Смены на каникулах"
           description="Весенние, летние и осенние смены. Длительность и цена зависят от каникул — выбирайте, что подходит вашей семье."
         />
 
