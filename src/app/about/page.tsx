@@ -151,7 +151,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="font-heading font-bold text-lg text-forest mb-3">Режим работы</h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  Лагерь работает в нескольких сменах продолжительностью 21–22 дня каждая в течение всего года. Актуальное расписание смен уточняйте у администрации.
+                  Лагерь работает в нескольких сменах продолжительностью 21 день каждая в течение всего года. Актуальное расписание смен уточняйте у администрации.
                 </p>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Офис организации работает: {CAMP.workingHours}. В период смен — круглосуточно с дежурным персоналом.

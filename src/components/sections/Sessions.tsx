@@ -28,8 +28,8 @@ export default function Sessions() {
       <div className="container-camp">
         <SectionHeader
           label="Смены 2025"
-          title="Ближайшие смены"
-          description="Ближайшие летние смены 2025 года. Осенний и зимний график — уточняйте напрямую у администрации."
+          title="Каникулы круглый год"
+          description="Весенние, летние и осенние смены. Длительность и цена зависят от каникул — выбирайте, что подходит вашей семье."
         />
 
         <div className="grid md:grid-cols-3 gap-6 mb-12">

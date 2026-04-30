@@ -81,7 +81,7 @@ export default function Safety() {
               </div>
               <div className="bg-white/10 rounded-2xl p-5 text-center">
                 <div className="font-heading font-black text-3xl text-blue-300 mb-1">0</div>
-                <div className="text-white/75 text-sm">Нарушений за 2024 год</div>
+                <div className="text-white/75 text-sm">Нарушений за 2025 год</div>
               </div>
             </div>
           </div>
