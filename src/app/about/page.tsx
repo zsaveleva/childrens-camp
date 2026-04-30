@@ -108,9 +108,9 @@ export default function AboutPage() {
                 <h3 className="font-heading font-bold text-lg text-ink mb-4">Контрольно-надзорная деятельность</h3>
                 <div className="space-y-3">
                   {[
-                    { org: 'Роспотребнадзор', result: 'Без нарушений, 2024', ok: true },
-                    { org: 'МЧС (пожнадзор)', result: 'Без нарушений, 2024', ok: true },
-                    { org: 'Комитет по образованию', result: 'Соответствует, 2024', ok: true },
+                    { org: 'Роспотребнадзор', result: 'Без нарушений, 2025', ok: true },
+                    { org: 'МЧС (пожнадзор)', result: 'Без нарушений, 2025', ok: true },
+                    { org: 'МВД', result: 'Без нарушений, 2025', ok: true },
                   ].map((item) => (
                     <div key={item.org} className="flex items-center justify-between py-2.5 border-b border-gray-50 last:border-0">
                       <span className="text-gray-600 text-sm">{item.org}</span>
@@ -142,7 +142,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="font-heading font-bold text-lg text-forest mb-3">Цели и задачи</h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  СОК «Ракета» осуществляет организацию отдыха, оздоровления и занятости детей и подростков в возрасте от 7 до 17 лет в каникулярный период.
+                  СОК «Ракета» осуществляет организацию отдыха, оздоровления и занятости детей и подростков в возрасте от 6 до 17 лет в каникулярный период.
                 </p>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Основные задачи: укрепление здоровья, развитие личностных качеств, формирование навыков самостоятельности и коллективной работы, реализация творческого потенциала.

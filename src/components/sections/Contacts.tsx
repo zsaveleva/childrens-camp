@@ -125,7 +125,7 @@ export default function Contacts() {
                   <div className="w-7 h-7 bg-forest rounded-lg flex items-center justify-center flex-shrink-0 text-white text-xs font-bold">А</div>
                   <div>
                     <div className="font-semibold text-base text-ink">Трансфер от лагеря</div>
-                    <div className="text-gray-500 text-sm mt-0.5">Комфортабельный автобус в сопровождении персонала и медработника — уточняйте при записи</div>
+                    <div className="text-gray-500 text-sm mt-0.5">Комфортабельный автобус в сопровождении персонала — уточняйте при записи</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">

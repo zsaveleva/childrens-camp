@@ -16,6 +16,7 @@ export default function HomePage() {
   return (
     <main>
       <Hero />
+      <Gallery />
       <About />
       <Sessions />
       <Advantages />
@@ -23,7 +24,6 @@ export default function HomePage() {
       <Activities />
       <Safety />
       <Team />
-      <Gallery />
       <Reviews />
       <FAQ />
       <Contacts />
