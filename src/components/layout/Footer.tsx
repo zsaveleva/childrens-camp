@@ -168,6 +168,12 @@ export default function Footer() {
             <div className="text-center md:text-right">
               <div>Сайт соответствует требованиям Приказа №201 от 14.03.2025</div>
               <div className="mt-1">Сведения актуальны на {new Date().getFullYear()} год</div>
+              <div className="mt-1">
+                Разработано{' '}
+                <a href="https://ai-solutionslab.ru/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                  AI Solutions Lab
+                </a>
+              </div>
             </div>
           </div>
         </div>
