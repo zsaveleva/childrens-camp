@@ -3,7 +3,7 @@ import { CAMP } from '@/lib/data'
 import MAXIcon from '@/components/ui/MAXIcon'
 
 const stats = [
-  { value: 'Смены', label: 'Круглый год' },
+  { value: '4 смены', label: 'Весна · Лето · Осень' },
   { value: '67 000 ₽', label: '21 день', accent: true },
   { value: '70 км', label: 'от Санкт-Петербурга' },
   { value: '6–17 лет', label: 'Возраст' },
@@ -63,12 +63,12 @@ export default function Hero() {
         {/* Live badge */}
         <div className="inline-flex items-center gap-2.5 px-5 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-medium text-white/90 mb-10">
           <span className="w-2 h-2 bg-blue-300 rounded-full animate-pulse" />
-          Набор на сезон 2026 открыт · Есть свободные места
+          Набор на сезон 2025 открыт · Есть свободные места
         </div>
 
         {/* Headline */}
         <h1 className="font-heading font-black text-[clamp(2.5rem,8vw,6rem)] text-white leading-[1.05] mb-6 tracking-tight">
-          Лето, которое{' '}
+          Каникулы, которые{' '}
           <span className="text-gold relative">
             запомнят
             <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 400 12" fill="none" preserveAspectRatio="none">

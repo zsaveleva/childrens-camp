@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 }
 
 const included = [
+  'Трансфер',
   'Проживание в корпусе (3–8 чел. в комнате)',
   '5-разовое питание по нормам СанПиН',
   'Полная программа мероприятий',
@@ -18,11 +19,9 @@ const included = [
   'Медицинское обслуживание (педиатр 24/7)',
   'Спортивное оборудование и инвентарь',
   'Расходные материалы для кружков',
-  'Страховка (НС) на период смены',
 ]
 
 const notIncluded = [
-  'Трансфер (+ 1 500 ₽ в одну сторону)',
   'Личные расходы ребёнка',
   'Дополнительные экскурсии (по желанию)',
 ]
@@ -120,7 +119,7 @@ export default function ServicesPage() {
                 <ul className="space-y-3">
                   {notIncluded.map((item) => (
                     <li key={item} className="flex items-start gap-3 text-sm text-gray-700">
-                      <span className="w-4 h-4 border-2 border-orange-300 rounded flex-shrink-0 mt-0.5" />
+                      {/* <span className="w-4 h-4 border-2 border-orange-300 rounded flex-shrink-0 mt-0.5" /> */}
                       {item}
                     </li>
                   ))}
