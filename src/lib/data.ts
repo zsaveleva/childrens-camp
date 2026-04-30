@@ -5,7 +5,7 @@ export const CAMP = {
   legalName: 'СОК «Ракета»',
   inn: '4704012345',
   ogrn: '1024701234567',
-  license: 'Лицензия на образовательную деятельность №Л035-01220-47/00123456',
+  license: 'Лицензия на медицинскую деятельность №Л035-01220-47/00123456',
   founded: '1956',
   ages: '7–17 лет',
   phone: '+7 (921) 922-07-31',
@@ -265,7 +265,7 @@ export const FAQ = [
 ]
 
 export const DOCUMENTS = [
-  { title: 'Лицензия на образовательную деятельность', file: '/docs/license.pdf', year: '2024' },
+  { title: 'Лицензия на медицинскую деятельность', file: '/docs/license.pdf', year: '2024' },
   { title: 'Санитарно-эпидемиологическое заключение', file: '/docs/san-zakl.pdf', year: '2024' },
   { title: 'Программа воспитания и оздоровления', file: '/docs/program.pdf', year: '2025' },
   { title: 'Договор на оказание услуг (образец)', file: '/docs/dogovor.pdf', year: '2025' },

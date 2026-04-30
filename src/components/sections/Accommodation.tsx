@@ -52,7 +52,7 @@ export default function Accommodation() {
               </div>
               <div>
                 <h3 className="font-heading font-bold text-xl text-ink">Проживание</h3>
-                <p className="text-gray-400 text-sm">4 корпуса · 240 мест</p>
+                <p className="text-gray-400 text-sm">7 корпусов</p>
               </div>
             </div>
             <CheckList items={housing} />
