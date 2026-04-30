@@ -15,13 +15,12 @@ const photos = [
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="section-py bg-forest overflow-hidden">
+    <section id="gallery" className="section-py bg-white overflow-hidden">
       <div className="container-camp">
         <SectionHeader
           label="Фотогалерея"
           title="Жизнь в лагере"
           description="Каждый день — новые события, новые фото. Следите за сменой в группе ВКонтакте в реальном времени."
-          light
         />
 
         {/* Mosaic grid */}
@@ -93,12 +92,12 @@ export default function Gallery() {
             href={CAMP.vkGroup}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold rounded-xl transition-colors"
+            className="btn-outline-forest"
           >
             <VKIcon className="w-5 h-5" />
             Все фото в группе ВКонтакте
           </a>
-          <p className="text-white/40 text-sm mt-3">Публикуем фото каждый день во время смены</p>
+          <p className="text-gray-400 text-sm mt-3">Публикуем фото каждый день во время смены</p>
         </div>
       </div>
     </section>
