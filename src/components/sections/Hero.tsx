@@ -62,7 +62,6 @@ export default function Hero() {
       <div className="relative z-10 container-camp w-full text-center py-32 lg:py-40">
         {/* Live badge */}
         <div className="inline-flex items-center gap-2.5 px-5 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-medium text-white/90 mb-10">
-          <span className="w-2 h-2 bg-blue-300 rounded-full animate-pulse" />
           Набор на сезон 2025 открыт · Есть свободные места
         </div>
 
@@ -107,7 +106,7 @@ export default function Hero() {
         </div>
 
         {/* Stats strip */}
-        <div className="grid grid-cols-2 sm:flex sm:divide-x sm:divide-white/15 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl overflow-hidden mx-auto">
+        <div className="grid grid-cols-2 sm:inline-grid sm:grid-cols-4 sm:divide-x sm:divide-white/15 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl overflow-hidden mx-auto">
           {stats.map((s, i) => (
             <div
               key={s.value}
