@@ -285,13 +285,13 @@ export const FAQ = [
 ]
 
 export const DOCUMENTS = [
-  { title: 'Лицензия на медицинскую деятельность (лист 1)', file: '/childrens-camp/docs/Медицинская_лицензия_1.pdf', year: '2024', format: 'PDF' },
-  { title: 'Лицензия на медицинскую деятельность (лист 2)', file: '/childrens-camp/docs/Медицинская_лицензия_2.pdf', year: '2024', format: 'PDF' },
-  { title: 'Лицензия на медицинскую деятельность (лист 3)', file: '/childrens-camp/docs/Медицинская_лицензия_3.pdf', year: '2024', format: 'PDF' },
-  { title: 'Санитарно-эпидемиологическое заключение', file: '/childrens-camp/docs/Санитарно-эпидемиологическое заключение.pdf', year: '2025', format: 'PDF' },
-  { title: 'Долгосрочная развивающая программа', file: '/childrens-camp/docs/Долгосрочная развивающая программа.docx', year: '2025', format: 'DOCX' },
-  { title: 'Рецензия на программу лагеря', file: '/childrens-camp/docs/Рецензия на программу лагеря Содружество.pdf', year: '2025', format: 'PDF' },
-  { title: 'Устав организации', file: '/childrens-camp/docs/Устав.rar', year: '2023', format: 'RAR' },
+  { title: 'Лицензия на медицинскую деятельность (лист 1)', file: '/childrens-camp/docs/Медицинская_лицензия_1.pdf', format: 'PDF' },
+  { title: 'Лицензия на медицинскую деятельность (лист 2)', file: '/childrens-camp/docs/Медицинская_лицензия_2.pdf', format: 'PDF' },
+  { title: 'Лицензия на медицинскую деятельность (лист 3)', file: '/childrens-camp/docs/Медицинская_лицензия_3.pdf', format: 'PDF' },
+  { title: 'Санитарно-эпидемиологическое заключение', file: '/childrens-camp/docs/Санитарно-эпидемиологическое заключение.pdf', format: 'PDF' },
+  { title: 'Долгосрочная развивающая программа', file: '/childrens-camp/docs/Долгосрочная развивающая программа.docx', format: 'DOCX' },
+  { title: 'Рецензия на программу лагеря', file: '/childrens-camp/docs/Рецензия на программу лагеря Содружество.pdf', format: 'PDF' },
+  { title: 'Устав организации', file: '/childrens-camp/docs/Устав.rar', format: 'RAR' },
 ]
 
 export const FOOTER_LINKS = {

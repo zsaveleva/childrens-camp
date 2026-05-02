@@ -43,7 +43,7 @@ export default function DocumentsPage() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="font-semibold text-ink group-hover:text-forest transition-colors truncate">{doc.title}</div>
-                  <div className="text-gray-500 text-sm mt-0.5">{doc.format ?? 'PDF'} · {doc.year} год</div>
+                  <div className="text-gray-500 text-sm mt-0.5">{doc.format ?? 'PDF'}</div>
                 </div>
                 <div className="flex items-center gap-2 text-gray-400 group-hover:text-leaf transition-colors flex-shrink-0">
                   <Download className="w-5 h-5" />
