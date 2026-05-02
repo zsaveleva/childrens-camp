@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import { CAMP, FOOTER_LINKS } from '@/lib/data'
 import VKIcon from '@/components/ui/VKIcon'
-import MAXIcon from '@/components/ui/MAXIcon'
 
 export default function Footer() {
   return (
@@ -28,13 +27,11 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               <a
-                href={CAMP.maxLink}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`tel:${CAMP.phoneRaw}`}
                 className="flex items-center gap-2 px-4 py-2.5 bg-white/10 hover:bg-white/20 text-white text-sm font-semibold rounded-xl transition-colors"
               >
-                <MAXIcon className="w-4 h-4" />
-                MAX
+                <Phone className="w-4 h-4" />
+                {CAMP.phone}
               </a>
               <a
                 href={CAMP.vkGroup}
@@ -164,12 +161,19 @@ export default function Footer() {
               <div>© {new Date().getFullYear()} {CAMP.legalName}. Все права защищены.</div>
               <div className="mt-1">ИНН {CAMP.inn} · ОГРН {CAMP.ogrn}</div>
               <div className="mt-1">{CAMP.license}</div>
+              <div className="mt-1">
+                <Link href="/privacy" className="hover:text-white transition-colors">
+                  Политика конфиденциальности
+                </Link>
+                {' · '}
+                <span>Персональные данные обрабатываются в соответствии с 152-ФЗ</span>
+              </div>
             </div>
             <div className="text-center md:text-right">
               <div>Сайт соответствует требованиям Приказа №201 от 14.03.2025</div>
               <div className="mt-1">Сведения актуальны на {new Date().getFullYear()} год</div>
               <div className="mt-1">
-                Разработано{' '}
+                Сайт разработан{' '}
                 <a href="https://ai-solutionslab.ru/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                   AI Solutions Lab
                 </a>

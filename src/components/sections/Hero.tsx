@@ -88,20 +88,20 @@ export default function Hero() {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
           <a
-            href={CAMP.maxLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#0077FF] hover:bg-[#005FD6] text-white font-bold text-lg rounded-2xl transition-all duration-200 shadow-xl shadow-blue-900/30 hover:shadow-2xl hover:shadow-blue-900/40 hover:-translate-y-0.5 active:translate-y-0"
-          >
-            <MAXIcon className="w-5 h-5" />
-            Написать в MAX
-          </a>
-          <a
             href={`tel:${CAMP.phoneRaw}`}
-            className="w-full sm:w-auto btn-outline-white text-lg px-8 py-4"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-forest hover:bg-forest-light text-white font-bold text-lg rounded-2xl transition-all duration-200 shadow-xl shadow-forest/30 hover:shadow-2xl hover:shadow-forest/40 hover:-translate-y-0.5 active:translate-y-0"
           >
             <Phone className="w-5 h-5" />
             {CAMP.phone}
+          </a>
+          <a
+            href={CAMP.maxLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto btn-outline-white text-lg px-8 py-4"
+          >
+            <MAXIcon className="w-5 h-5" />
+            Написать в MAX
           </a>
         </div>
 

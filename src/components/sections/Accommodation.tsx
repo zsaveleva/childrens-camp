@@ -2,7 +2,7 @@ import SectionHeader from '@/components/ui/SectionHeader'
 import { Check, Home, UtensilsCrossed } from 'lucide-react'
 
 const housing = [
-  'Капитальный ремонт 2018 года',
+  'Капитальный ремонт 2018 г.',
   '3–8 человек в комнате, раздельные мальчики/девочки',
   'Горячая вода и индивидуальные душевые кабины',
   'Ежедневная двухразовая уборка и смена белья раз в неделю',

@@ -241,6 +241,13 @@ export default function Header() {
           </nav>
           <div className="px-6 py-4 border-t border-gray-100 space-y-3">
             <a
+              href={`tel:${CAMP.phoneRaw}`}
+              className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 bg-forest hover:bg-forest-light text-white font-semibold text-base rounded-2xl transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 w-full"
+            >
+              <Phone className="w-4 h-4" />
+              {CAMP.phone}
+            </a>
+            <a
               href={CAMP.maxLink}
               target="_blank"
               rel="noopener noreferrer"
@@ -248,13 +255,6 @@ export default function Header() {
             >
               <MAXIcon className="w-4 h-4" />
               Написать в MAX
-            </a>
-            <a
-              href={`tel:${CAMP.phoneRaw}`}
-              className="btn-outline-forest w-full justify-center"
-            >
-              <Phone className="w-4 h-4" />
-              {CAMP.phone}
             </a>
           </div>
         </div>

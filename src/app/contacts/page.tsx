@@ -6,7 +6,7 @@ import MAXIcon from '@/components/ui/MAXIcon'
 
 export const metadata: Metadata = {
   title: 'Контакты',
-  description: `Телефон, email, адрес и схема проезда до СОК «Ракета». Звоните: ${'+7 (921) 922-07-31'} или пишите в MAX.`,
+  description: `Телефон, email, адрес и схема проезда до СОК «Ракета». Звоните: ${'+7 (921) 922-07-31'}.`,
 }
 
 export default function ContactsPage() {
@@ -29,38 +29,41 @@ export default function ContactsPage() {
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Contacts */}
             <div className="space-y-5">
-              {/* MAX — primary */}
+              {/* Phone — primary */}
+              <a
+                href={`tel:${CAMP.phoneRaw}`}
+                className="block bg-forest rounded-3xl p-7 hover:shadow-xl hover:shadow-forest/25 hover:-translate-y-1 transition-all duration-300"
+              >
+                <div className="flex items-center gap-4 mb-3">
+                  <div className="w-12 h-12 bg-white/15 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <div className="text-white/75 text-xs font-semibold uppercase tracking-wider">Основной контакт</div>
+                    <div className="font-heading font-bold text-xl text-white">{CAMP.phone}</div>
+                  </div>
+                </div>
+                <p className="text-white/70 text-sm leading-relaxed">
+                  Позвоните нам — ответим в рабочее время. Вопросы, запись, документы — всё по телефону.
+                </p>
+                <div className="text-white/50 text-xs mt-3">{CAMP.workingHours}</div>
+              </a>
+
+              {/* MAX */}
               <a
                 href={CAMP.maxLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-[#0077FF] rounded-3xl p-7 hover:shadow-xl hover:shadow-blue-600/25 hover:-translate-y-1 transition-all duration-300"
-              >
-                <div className="flex items-center gap-4 mb-3">
-                  <MAXIcon className="w-12 h-12 rounded-2xl" />
-                  <div>
-                    <div className="text-white/75 text-xs font-semibold uppercase tracking-wider">Основной канал · MAX</div>
-                    <div className="font-heading font-bold text-xl text-white">Написать в MAX</div>
-                  </div>
-                </div>
-                <p className="text-white/70 text-sm leading-relaxed">
-                  Самый быстрый способ связи. Ответим в течение часа в рабочее время. Вопросы, запись, документы — всё через MAX.
-                </p>
-              </a>
-
-              {/* Phone */}
-              <a
-                href={`tel:${CAMP.phoneRaw}`}
-                className="block bg-white rounded-3xl border border-gray-200 p-7 hover:border-forest/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                className="block bg-white rounded-3xl border border-gray-200 p-7 hover:border-blue-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-forest/10 rounded-2xl flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-forest" />
+                  <div className="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <MAXIcon className="w-10 h-10 rounded-xl" />
                   </div>
                   <div>
-                    <div className="text-gray-400 text-xs font-semibold uppercase tracking-wider mb-1">Телефон</div>
-                    <div className="font-heading font-bold text-2xl text-ink">{CAMP.phone}</div>
-                    <div className="text-gray-400 text-sm">{CAMP.workingHours}</div>
+                    <div className="text-gray-400 text-xs font-semibold uppercase tracking-wider mb-1">MAX</div>
+                    <div className="font-heading font-bold text-2xl text-ink">Написать в MAX</div>
+                    <div className="text-gray-400 text-sm">Ответим быстро в рабочее время</div>
                   </div>
                 </div>
               </a>

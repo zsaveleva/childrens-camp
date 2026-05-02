@@ -23,26 +23,26 @@ export default function CTA() {
                 <span className="text-gold">ребёнка в лагерь?</span>
               </h2>
               <p className="text-white/75 text-lg leading-relaxed">
-                Не откладывайте — места ограничены. Напишите в MAX или позвоните, и мы всё расскажем.
+                Не откладывайте — места ограничены. Позвоните или напишите нам, и мы всё расскажем.
               </p>
             </div>
 
             <div className="flex flex-col gap-4 flex-shrink-0 w-full md:w-auto">
               <a
-                href={CAMP.maxLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-3 px-8 py-4 bg-[#0077FF] hover:bg-[#005FD6] text-white font-bold text-lg rounded-2xl transition-all duration-200 shadow-xl shadow-blue-900/40 hover:-translate-y-0.5 active:translate-y-0"
-              >
-                <MAXIcon className="w-5 h-5" />
-                Написать в MAX
-              </a>
-              <a
                 href={`tel:${CAMP.phoneRaw}`}
-                className="flex items-center justify-center gap-3 px-8 py-4 border-2 border-white/30 hover:border-white/60 text-white font-semibold text-lg rounded-2xl transition-all duration-200 hover:bg-white/10 hover:-translate-y-0.5 active:translate-y-0"
+                className="flex items-center justify-center gap-3 px-8 py-4 bg-white hover:bg-gray-100 text-forest font-bold text-lg rounded-2xl transition-all duration-200 shadow-xl hover:-translate-y-0.5 active:translate-y-0"
               >
                 <Phone className="w-5 h-5" />
                 {CAMP.phone}
+              </a>
+              <a
+                href={CAMP.maxLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-3 px-8 py-4 border-2 border-white/30 hover:border-white/60 text-white font-semibold text-lg rounded-2xl transition-all duration-200 hover:bg-white/10 hover:-translate-y-0.5 active:translate-y-0"
+              >
+                <MAXIcon className="w-5 h-5" />
+                Написать в MAX
               </a>
               <p className="text-center text-white/60 text-xs">
                 Отвечаем в рабочее время · {CAMP.workingHours}

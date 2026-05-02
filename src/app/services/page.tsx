@@ -50,14 +50,14 @@ export default function ServicesPage() {
 
       <div className="section-py">
         <div className="container-camp">
-          {/* Sessions */}
-          <div className="grid md:grid-cols-3 gap-6 mb-14">
-            {SESSIONS.map((s) => (
+          {/* Regular sessions */}
+          <div className="grid md:grid-cols-3 gap-6 mb-6">
+            {SESSIONS.filter(s => !s.featured).map((s) => (
               <div key={s.id} className="bg-white rounded-3xl border-2 border-gray-100 hover:border-forest/20 p-7 hover:shadow-lg transition-all duration-300">
                 <div className="flex items-start justify-between mb-4">
                   <div className="text-xs font-bold uppercase tracking-wider text-leaf">{s.title}</div>
                   {s.badge && (
-                    <Badge variant={s.badgeColor as 'red' | 'green'} size="sm">{s.badge}</Badge>
+                    <Badge variant={s.badgeColor as 'red' | 'green' | 'gold'} size="sm">{s.badge}</Badge>
                   )}
                 </div>
                 <h3 className="font-heading font-black text-2xl text-ink mb-1">{s.theme}</h3>
@@ -82,13 +82,11 @@ export default function ServicesPage() {
                     {s.price.toLocaleString('ru-RU')} ₽
                   </div>
                   <a
-                    href={CAMP.maxLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={`tel:${CAMP.phoneRaw}`}
                     className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-forest hover:bg-forest-light text-white font-semibold text-sm transition-colors"
                   >
-                    <MAXIcon className="w-4 h-4" />
-                    Уточнить наличие мест
+                    <Phone className="w-4 h-4" />
+                    Позвонить
                   </a>
                 </div>
               </div>
@@ -152,7 +150,7 @@ export default function ServicesPage() {
                 <Phone className="w-4 h-4" />
                 Позвонить
               </a>
-              <a href={CAMP.maxLink} target="_blank" rel="noopener noreferrer" className="btn-max">
+              <a href={CAMP.maxLink} target="_blank" rel="noopener noreferrer" className="btn-outline-white">
                 <MAXIcon className="w-4 h-4" />
                 Написать в MAX
               </a>

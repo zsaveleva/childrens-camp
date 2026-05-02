@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { FileText, Download } from 'lucide-react'
-import { DOCUMENTS } from '@/lib/data'
+import { DOCUMENTS, CAMP } from '@/lib/data'
 
 export const metadata: Metadata = {
   title: 'Документы',
@@ -43,7 +43,7 @@ export default function DocumentsPage() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="font-semibold text-ink group-hover:text-forest transition-colors truncate">{doc.title}</div>
-                  <div className="text-gray-500 text-sm mt-0.5">PDF · {doc.year} год</div>
+                  <div className="text-gray-500 text-sm mt-0.5">{doc.format ?? 'PDF'} · {doc.year} год</div>
                 </div>
                 <div className="flex items-center gap-2 text-gray-400 group-hover:text-leaf transition-colors flex-shrink-0">
                   <Download className="w-5 h-5" />
@@ -57,12 +57,12 @@ export default function DocumentsPage() {
               <strong className="text-ink">Не нашли нужный документ?</strong> Напишите нам — вышлем по запросу.
             </p>
             <div className="flex gap-4">
-              <a href="mailto:raketa-lenobl@mail.ru" className="text-leaf hover:text-forest font-medium transition-colors">
-                raketa-lenobl@mail.ru
+              <a href={`mailto:${CAMP.email}`} className="text-leaf hover:text-forest font-medium transition-colors">
+                {CAMP.email}
               </a>
               <span className="text-gray-200">|</span>
-              <a href="tel:+78123345566" className="text-leaf hover:text-forest font-medium transition-colors">
-                +7 (812) 334-55-66
+              <a href={`tel:${CAMP.phoneRaw}`} className="text-leaf hover:text-forest font-medium transition-colors">
+                {CAMP.phone}
               </a>
             </div>
           </div>

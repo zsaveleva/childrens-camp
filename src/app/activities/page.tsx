@@ -44,7 +44,7 @@ export default function ActivitiesPage() {
             <span className="text-white/80">Деятельность</span>
           </nav>
           <h1 className="font-heading font-black text-4xl md:text-5xl text-white mb-4">Программа и деятельность</h1>
-          <p className="text-white/75 text-lg max-w-xl">30+ кружков, особые события каждой смены и режим дня, который не скучает</p>
+          <p className="text-white/75 text-lg max-w-xl">10+ кружков, особые события каждой смены и режим дня, который не скучает</p>
         </div>
       </div>
 

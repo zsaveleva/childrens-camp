@@ -76,7 +76,7 @@ export default function Activities() {
         {/* Bottom teaser */}
         <div className="mt-8 grid sm:grid-cols-3 gap-4 text-center">
           {[
-            { num: '30+', label: 'кружков и секций' },
+            { num: '10+', label: 'кружков и секций' },
             { num: 'Каждый день', label: 'новые активности' },
             { num: 'Свободный выбор', label: 'направлений' },
           ].map((item) => (
